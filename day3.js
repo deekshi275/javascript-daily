@@ -16,17 +16,17 @@ let student = {
 //     console.log(i,student[i])
 // }
 
-let a = [
-  { name: "deekshi", age: 22, marks: 35 },
-  { name: "rakshi", age: 23, marks: 34 },
-  { name: "poo", age: 24, marks: 55 },
-  { name: "priya", age: 25, marks: 56 },
-  { name: "praveen", age: 26, marks: 45 },
-];
+// let a = [
+//   { name: "deekshi", age: 22, marks: 35 },
+//   { name: "rakshi", age: 23, marks: 34 },
+//   { name: "poo", age: 24, marks: 55 },
+//   { name: "priya", age: 25, marks: 56 },
+//   { name: "praveen", age: 26, marks: 45 },
+// ];
 
 
-let d = {name:'shu',age:23,marks:78}
-console.log(a.unshift(d))
+// let d = {name:'shu',age:23,marks:78}
+// console.log(a.unshift(d))
 
 // for(let i=0;i<=a.length-1;i+=1){
 //     console.log(a[i].age)
@@ -34,5 +34,10 @@ console.log(a.unshift(d))
 // console.log(a[0])
 
 
-console.log(...a)
-console.log(a[0])
+// console.log(...a)
+// console.log(a[0])
+
+function fun1(a){
+    console.log(a.split('').reverse().join(''))
+}
+fun1("rakshith")
