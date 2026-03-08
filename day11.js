@@ -35,30 +35,7 @@
 // let date = new Date;
 // console.log('to day dayt is',date.getDate())
 
-// let date = new Date;
-// if (date.getMonth() === 0) {
-//     console.log('month is January');
-// } else if (date.getMonth() === 1) {
-//     console.log('month is February');
-// }else if (date.getMonth() === 3) {
-//     console.log('month is April');
-// }else if (date.getMonth() === 4) {
-//     console.log('month is May');
-// }else if (date.getMonth() === 5) {
-//     console.log('month is June');
-// }else if (date.getMonth() === 6) {
-//     console.log('month is July');
-// }else if (date.getMonth() === 7) {
-//     console.log('month is August');
-// }else if (date.getMonth() === 8) {
-//     console.log('month is September');
-// }else if (date.getMonth() === 9) {
-//     console.log('month is October');
-// }else if (date.getMonth() === 10) {
-//     console.log('month is November');
-// }else if (date.getMonth() === 11) {
-//     console.log('month is December');
-// }
+
 
 // else if (date.getMonth() === 2) {
 //     console.log('month is March');
@@ -87,21 +64,43 @@
 // }
 
 
-let java = Number(prompt("Enter your marks: "));
-let python = Number(prompt("Enter your marks: "));
-let c = Number(prompt("Enter your marks: "));
-let javascript = Number(prompt("Enter your marks: "));
-let html = Number(prompt("Enter your marks: "));
+// let java = Number(prompt("Enter your marks: "));
+// let python = Number(prompt("Enter your marks: "));
+// let c = Number(prompt("Enter your marks: "));
+// let javascript = Number(prompt("Enter your marks: "));
+// let html = Number(prompt("Enter your marks: "));
 
-let totalMarks = java + python + c + javascript + html;
-let percentage = (totalMarks / 500) * 100;
-if(java<0 || python<0 || c<0 || javascript<0 || html<0){
-    console.log("Invalid marks");
-}else if (java>100 || python>100 || c>100 || javascript>100 || html>100) {
-    console.log("Invalid marks");
-}else if (percentage >= 35) {
-    console.log("pass");
+// let totalMarks = java + python + c + javascript + html;
+// let percentage = (totalMarks / 500) * 100;
+// if(java<0 || python<0 || c<0 || javascript<0 || html<0){
+//     console.log("Invalid marks");
+// }else if (java>100 || python>100 || c>100 || javascript>100 || html>100) {
+//     console.log("Invalid marks");
+// }else if (percentage >= 35) {
+//     console.log("pass");
+// }
+// else{
+//     console.log("fail");
+// }
+
+
+let month = ["january","february","march","april","may","june","july","august","september","october","november","december"];
+let date = new Date;
+if (date.getMonth() === 0) {
+    console.log(month[0])
 }
-else{
-    console.log("fail");
+else if (date.getMonth() === 1) {
+    console.log(month[1])
+}
+else if (date.getMonth() === 2) {
+    console.log(month[2])
+}
+else if (date.getMonth() === 3) {
+    console.log(month[3])
+}
+else if (date.getMonth() === 4) {
+    console.log(month[4])
+}
+else if (date.getMonth() === 5) {
+    console.log(month[5])
 }
