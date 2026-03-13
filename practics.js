@@ -1,7 +1,2 @@
-let a= 3
-let b = 2
-a=a^b
-b=a^b
-a=a^b
-
-console.log('a ',a,'\nb',b)
+let arr = [1,2,3,4,5,6,7,8]
+console.log([...arr])
