@@ -56,9 +56,9 @@
 
 // let date = new Date;
 // if (date.getHours() < 12) {
-//     console.log('pm');
-// } else if (date.getHours() < 18) {
 //     console.log('am');
+// } else if (date.getHours() < 18) {
+//     console.log('pm');
 // } else {
 //     console.log('pm');
 // }
@@ -84,23 +84,23 @@
 // }
 
 
-let month = ["january","february","march","april","may","june","july","august","september","october","november","december"];
-let date = new Date;
-if (date.getMonth() === 0) {
-    console.log(month[0])
-}
-else if (date.getMonth() === 1) {
-    console.log(month[1])
-}
-else if (date.getMonth() === 2) {
-    console.log(month[2])
-}
-else if (date.getMonth() === 3) {
-    console.log(month[3])
-}
-else if (date.getMonth() === 4) {
-    console.log(month[4])
-}
-else if (date.getMonth() === 5) {
-    console.log(month[5])
-}
+// let month = ["january","february","march","april","may","june","july","august","september","october","november","december"];
+// let date = new Date;
+// if (date.getMonth() === 0) {
+//     console.log(month[0])
+// }
+// else if (date.getMonth() === 1) {
+//     console.log(month[1])
+// }
+// else if (date.getMonth() === 2) {
+//     console.log(month[2])
+// }
+// else if (date.getMonth() === 3) {
+//     console.log(month[3])
+// }
+// else if (date.getMonth() === 4) {
+//     console.log(month[4])
+// }
+// else if (date.getMonth() === 5) {
+//     console.log(month[5])
+// }
