@@ -12,3 +12,4 @@ for (let i =2;i<=Math.floor(Math.sqrt(a));i++){
 }
 
 
+
