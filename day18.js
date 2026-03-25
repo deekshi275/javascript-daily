@@ -56,32 +56,32 @@
 // console.log(reveliment)
 
 
-// let arr = ['ravi', 'shastry','murnal','thakur','a','b','c','d',1,2,3,4,'@','#','$','%'];
-// let alphabet = []
-// let str = []
-// let num = []
-// let spcl = []
+let arr = ['ravi', 'shastry','murnal','thakur','a','b','c','d',1,2,3,4,'@','#','$','%'];
+let alphabet = []
+let str = []
+let num = []
+let spcl = []
 
-// for(let i = 0; i<arr.length; i++){
-//     if(isNaN(arr[i]) && arr[i].length > 1){
-//         str.push(arr[i])
-//     }
-//     else if('!@#$%^&*()_+{}|:"<>?`~'.includes(arr[i])){
-//         spcl.push(arr[i])
-//     }
-//     else if(isNaN(arr[i])){
-//         alphabet.push(arr[i])
-//     }
-//     else if(!isNaN(arr[i])){
-//         num.push(arr[i])
-//     }
-//     else{
-//         alphabet.push(arr[i])
-//     }
-// }
-// console.log(str)
-// console.log(spcl)
-// console.log(num)
-// console.log(alphabet)
+for(let i = 0; i<arr.length; i++){
+    if(isNaN(arr[i]) && arr[i].length > 1){
+        str.push(arr[i])
+    }
+    else if('!@#$%^&*()_+{}|:"<>?`~'.includes(arr[i])){
+        spcl.push(arr[i])
+    }
+    else if(isNaN(arr[i])){
+        alphabet.push(arr[i])
+    }
+    else if(!isNaN(arr[i])){
+        num.push(arr[i])
+    }
+    else{
+        alphabet.push(arr[i])
+    }
+}
+console.log(str)
+console.log(spcl)
+console.log(num)
+console.log(alphabet)
 
 console.log(typeof(typeof(2)))
