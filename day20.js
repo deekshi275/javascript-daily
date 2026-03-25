@@ -276,15 +276,15 @@
 
 
 
-let arr = ['mongo','bb','banan','apple','grapes','pineaple']
+// let arr = ['mongo','bb','banan','apple','grapes','pineaple']
 
-// let x = arr.forEach((d,i,arr)=>{
+// // let x = arr.forEach((d,i,arr)=>{
+// //     return(i)
+// // })
+// // console.log(x)
+
+
+// let x = arr.map((d,i,arr)=>{
 //     return(i)
 // })
 // console.log(x)
-
-
-let x = arr.map((d,i,arr)=>{
-    return(i)
-})
-console.log(x)
