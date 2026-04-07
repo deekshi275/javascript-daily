@@ -3,25 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADA</title>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(151, 199, 38);
+        }
+        .continer{
+            border-radius: 20px;
+            width: 500px;
+            margin-top: 10%;
+            margin-left: 35%;
+            background-color: rgb(92, 209, 193);
+
+           
+        }
+        .continer input{
+            width: 98.5%;
+            height: 50px;
+            font-size: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .row1,.row2,.row3,.row4,.row5{
+            display: flex;
+            justify-content: space-around;
+        }
+        .row1 button, .row2 button, .row3 button, .row4 button, .row5 button{
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <H1 id="one">HELLO, THIS IS ADARSH B G</H1>
-    <P id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat dolores cum, quia magnam ullam perferendis nesciunt nobis vitae tempora obcaecati inventore. Obcaecati ducimus maxime sint velit ea laudantium amet facilis exercitationem enim, nulla natus atque accusamus rem illo unde. Laudantium est eos corporis deleniti natus iure, animi ea commodi impedit eaque odio earum aperiam, officia aliquid neque alias! Harum, molestiae nobis expedita libero praesentium asperiores laboriosam ipsum minima eligendi rem neque incidunt dolor nesciunt. Commodi placeat, tempora ducimus libero in eveniet repellendus maxime, voluptates corporis aut omnis inventore expedita ad vero vel aliquid repudiandae sunt minima ut nostrum doloremque.</P>
-
-
-    <div id="navbar">
-        <div id="leftnav"><h1>adarshbg</h1>
+    <div class="continer">
+        <input type="text" name="" id="">
+        <div class="row1">
+            <button id="1">1</button>
+            <button id="2">2</button>
+            <button id="3">3</button>
+            <button id="4">4</button>
         </div>
-        <div id="middelnav">
-            <a href="" id="home">home</a>
-            <a href="" id="about">about</a>
-            <a href="" id="contact">contact</a>
+        <div class="row2">
+            <button id="5">5</button>
+            <button id="6">6</button>
+            <button id="7">7</button>
+            <button id="8">8</button>
         </div>
-        <div id="endnav">
-            <button id="button">login</button>
+        <div class="row3">
+            <button id="9">9</button>
+            <button id="0">0</button>
+            <button id="*">*</button>
+            <button id="+">+</button>
+        </div>
+        <div class="row4">
+            <button id="del">DEL</button>
+            <button id="=">=</button>
+            <button id="ac">AC</button>
+            <button id="==">==</button>
+        </div>
+        <div class="row5">
+            <button id="-">-</button>
+            <button id="/">/</button>
+            <button id="%">%</button>
+            <button id="00">00</button>
         </div>
     </div>
-     <script src="day21.js"></script>
 </body>
+<script src="day25.js"></script>
 </html>
