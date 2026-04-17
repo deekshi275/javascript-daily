@@ -3,94 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<style>
-    * {
-    margin: 0%;
-    padding: 0%;
-}
+    <title>Quote Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.container {
-    .cards {
-        display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #111;
+        }
+
+        .continer {
+            width: 100%;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        nav {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .cards {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
 
         .card {
+            width: calc(33.333% - 13.333px);
+            min-width: 250px;
+            background-color: rgb(49, 85, 80);
+            color: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
             display: flex;
             flex-direction: column;
-            align-items: center;
-            /* display: flex; */
-            /* flex-direction: column; */
-            justify-content: center;
-            
-            width: 400px;
-            height: 600px;
-            border-radius: 30px;
-            border: 2px solid black;
-            gap: 6px;
-            align-items: center;
-            justify-content: center;
-            margin-top: 9px;
-            padding: 12px;
-            padding: 30px;
-            justify-content: space-evenly;
-            background: rgb(235, 148, 85);
-
-            img {
-                width: 300px;
-                height: 250px;
-            }
-            h2{
-                font-weight:lighter;
-                font-size: 20px;
-                text-decoration: dashed;
-            }
-            p{
-                text-align: justify;
-            }
-
+            gap: 12px;
         }
 
-    }
-}
-nav{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    background: rgb(235, 148, 85);
-    padding: 12px;
-    a{
-        text-decoration: none;
-        color: black;
-        font-size: 20px;
-        font-weight: lighter;
-        border-bottom: 2px solid transparent;
-        transition: all 0.3s ease-in-out;
-
-        &:hover{
-            border-bottom: 2px solid black;
+        .card h1 {
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            color: #f8c471;
         }
-    }
-}
-</style>
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 6px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+            max-height: 320px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #000000;
+        }
+
+        .card span {
+            font-weight: 600;
+            color: #000000;
+        }
+        nav{
+          
+            background-color: #0f172a;
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+           align-items: center;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        button:hover{
+            background-color: #0f172a;
+            color: white;
+        }
+        nav:hover{
+            background-color: #f7f7f7;
+            color: #0f172a;
+
+        }
+        .card:hover{
+            background-color: #425d80;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <nav class="nav"><a href="">dinner</a>
-        <a href="" id="lunch">lunch</a>
-        <a href="" id="breakfast">breakfast</a>
-        <a href="" id="desert">desert</a>
-        <a href="" id="snack">snack</a>
-    </nav>
-
-
-    <div class="container">\
-        <div class="cards">
-           
-        </div>
+    <div class="continer">
+        <nav>
+            <button id="breakfast", onclick="done()">breakfast</button>
+            <button id="dinner"  onclick="done()">dinner</button>
+            <button>snack</button>
+            <button>desert</button>
+        </nav>
+        <div class="cards"></div>
     </div>
-    
     <script src="qoutes.js"></script>
 </body>
 </html>

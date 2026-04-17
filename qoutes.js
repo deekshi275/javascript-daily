@@ -1,33 +1,70 @@
-let cards=document.getElementsByClassName("cards")[0]
-let nav = document.getElementsByClassName("nav")[0]
-let lunch = document.getElementById("lunch")
 let breakfast = document.getElementById("breakfast")
 let dinner = document.getElementById("dinner")
-let dessert = document.getElementById("desert")
-let snack = document.getElementById("snack")
-
+let card = document.getElementsByClassName('cards')[0]
 let url = "https://dummyjson.com/recipes"
-let data = fetch(url).then((d)=>{
-    return d.json()
-}).then((fd)=>{
-    return fd.recipes
+console.log(dinner)
+console.log(breakfast)
+// console.log(breakfast)
+let data = fetch(url).then((res)=>{
+    return(res.json())
+}).then((d)=>{
+    let recipe = (d.recipes)
 
-}).then((recipes)=>{
-    recipes.map((Element)=>{
-        // console.log(Element)
-        
 
-        let {id,ingredients,instructions,mealType,prepTimeMinutes,image}= Element
-        cards.innerHTML+=` <div class="card">
-                <h2>${id}</h2>
-                <img src=${image} alt="">
-                <h2>ingredients: ${ingredients}</h2>
-                <p> instructions: ${instructions}</p>
-                <h2>mealType: ${mealType}</h2>
-                <h2>time: ${prepTimeMinutes}</h2>
+    breakfast.addEventListener("click",()=>{
+        recipe.filter((ele)=>{
+            if (ele.mealType.includes('Breakfast')){
 
-            </div>`
-
-        
+            let {id,name,image,ingredients,mealType} = ele
+            card.innerHTML +=`
+                <div class="card">
+                <h1>${id}</h1>
+                <span id="name">${name}</span>
+                <img src=${image} alt="image looding...">
+                <span id="instrc">${ingredients}</span>
+                <span id="preper">${mealType}</span>
+                  </div>
+        `  
+    }
     })
+    })
+    
+
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // breakfast.addEventListener("click",()=>{
+
+    //     recipe.filter((ele)=>{
+    //         if(ele.mealType.includes('Breakfast')){
+    //         let {id,name,image,ingredients,mealType} = ele
+    //         card.innerHTML +=`
+    //             <div class="card">
+    //             <h1>${id}</h1>
+    //             <span id="name">${name}</span>
+    //             <img src=${image} alt="image looding...">
+    //             <span id="instrc">${ingredients}</span>
+    //             <span id="preper">${mealType}</span>
+    //               </div>
+    //     `  
+
+    //         }
+    //     })
+    // })
+
+            
+  
